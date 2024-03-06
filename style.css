@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter";
+  background: linear-gradient(136.56deg, #8a53b6 0%, #cea2d0 97.42%) no-repeat;
+  font-family: "Inter", "LatoWeb", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  background: white;
+  min-height: 680px;
+  max-width: 990px;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.card__header,
+.card__body {
+  width: 50%;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__header {
+  background: #f3f4f6;
+}
+
+.card .short-logo {
+  margin-bottom: 32px;
+}
+
+.card__info {
+  padding: 0 25px;
+}
+
+.card__info p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.jar {
+  position: relative;
+  text-align: center;
+}
+
+.grid {
+  left: 48px;
+  top: 40px;
+  position: absolute;
+}
+
+.jar-label.jar-goal {
+  position: absolute;
+  top: 40px;
+  left: 69px;
+  font-weight: 800;
+  font-size: 10px;
+  color: #8e5b5b;
+  white-space: nowrap;
+}
+
+.jar-label.jar-middle {
+  position: absolute;
+  top: 110px;
+  left: 54px;
+  font-weight: 800;
+  font-size: 10px;
+  color: #8e5b5b;
+  white-space: nowrap;
+}
+
+.jar-label.jar-bottom {
+  position: absolute;
+  bottom: 96px;
+  left: 56px;
+  font-weight: 800;
+  font-size: 10px;
+  color: #8e5b5b;
+  white-space: nowrap;
+}
+
+.jar__bg {
+  width: 215px;
+  height: 215px;
+  margin-bottom: 20px;
+}
+
+.jar__glass {
+  height: 203px;
+  width: 155px;
+  left: 35px;
+  top: 10px;
+  position: absolute;
+}
+
+.jar__owner {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.jar__name {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.stats {
+  margin-top: 16px;
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.stats-data {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px;
+  margin: 12px 0;
+}
+
+.stats-data:not(:last-child) {
+  border-right: solid #ccc 0.5px;
+}
+
+.stats-data__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+
+.stats-data__value {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.gradient {
+  top: 48px;
+  right: 50px;
+  background: linear-gradient(92.12deg, #57b5f9 0%, #e644cb 100%);
+  height: 216px;
+  width: 393px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.white-elispe {
+  background-color: #fff;
+  height: 210px;
+  width: 387px;
+  border-radius: 22px;
+}
+
+.button-monney {
+  display: inline;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-monney__text {
+  padding-top: 24px;
+  justify-content: center;
+  display: flex;
+  font-family: "Inter", "LatoWeb", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+  font-style: normal;
+  font-size: 14px;
+  color: #1b1c21;
+}
+
+.dollar {
+  display: flex;
+  width: 16px;
+  margin-left: 0.5em;
+  margin-bottom: 20px;
+}
+
+.donation {
+  display: inline;
+  padding-left: 42px;
+  font-weight: 700;
+  font-family: "Inter", "LatoWeb", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+input[type="number"] {
+  text-align: right;
+  border: none;
+  outline: none;
+  font-size: 48px;
+  font-weight: 700;
+  color: #a2a2a4;
+  width: 150px;
+  margin-right: 10px;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin-right: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-monney__input_sumb {
+  padding: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #a2a2a4;
+}
+
+.buttom-donate {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.add-money {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0 3px;
+  text-align: center;
+  margin: 0 8px;
+  border-radius: 16px;
+  min-height: 40px;
+  min-width: 102px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter", "LatoWeb", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+.data-donaters {
+  text-align: center;
+}
+
+.data-button {
+  max-width: 306px;
+  width: 306px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: transparent;
+  padding: 0 16px;
+  height: 56px;
+}
+
+.data-button::placeholder {
+  font-size: 14px;
+  text-align: left;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+  transform: translate(0, 0);
+}
+
+.data-button:focus::placeholder {
+  font-size: 10px;
+  text-align: left;
+  transform: translate(0%, -140%);
+}
+
+.button-bank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin: 0 auto;
+  width: 340px;
+  border-radius: 8px;
+  background: #000;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.logo-mono {
+  height: 26px;
+  width: 103px;
+}
+
+.logo-gpay {
+  height: 26px;
+  width: 66px;
+}
+
+#hideHr {
+  display: block;
+}
+
+.splitter {
+  margin-top: 8px;
+  color: #ccc;
+  size: 0.5px;
+  width: 340px;
+}
+
+.card-input-button {
+  display: flex;
+  padding-top: 22px;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 16px;
+  height: 26px;
+  margin-right: 8px;
+}
+
+#toggleButton {
+  display: flex;
+}
+
+.card-input-label {
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600px;
+  color: #e85e5b;
+}
+
+.info {
+  display: flex;
+  width: 990px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.button-footer {
+  display: flex;
+}
+
+.footer-copyright {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.white-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 0 16px;
+  height: 40px;
+  color: #fff;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.white-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.lotery {
+  margin-right: 16px;
+}
+
+.add-money:hover {
+  background-color: #cccccc78;
+  cursor: pointer;
+}
+
+.button-bank:hover {
+  background-color: #000000c4;
+  cursor: pointer;
+}
+
+.white-buttons:hover {
+  background-color: #ffffff3a;
+  cursor: pointer;
+}
+
+.data-donaters:hover value {
+  display: flex;
+  justify-content: right;
+}
+
+#hiddenElement {
+  display: none;
+}
+
+.another-card__info {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.line-one {
+  width: 75px;
+  height: 0.1px;
+}
+
+.change-card {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 10px;
+}
+
+.cvv {
+  display: flex;
+  align-items: center;
+}
+
+.data-type {
+  border: none;
+  width: 90px;
+  text-align: left;
+  color: #757575;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.data-type::placeholder {
+  border: none;
+  font-size: 14px;
+  text-align: left;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+  transform: translate(0, 0);
+}
+
+.data-type:focus::placeholder {
+  border: none;
+  font-size: 10px;
+  text-align: left;
+  transform: translate(0%, -140%);
+}
+
+.vertical-hr {
+  height: 35px;
+  margin-right: 20px;
+}
+
+.button-send {
+  background-color: #fdb9bb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 346px;
+  width: 100%;
+  max-width: 306px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 0 16px;
+  height: 56px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.error-value {
+  display: none;
+  justify-content: center;
+  font-size: 12px;
+  color: #626161;
+  margin-bottom: 10px;
+}
